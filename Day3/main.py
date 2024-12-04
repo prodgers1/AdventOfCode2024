@@ -31,7 +31,7 @@ for match in re.split(r"do\(\)", input):
   else:
       enabled_memory.append(match)
 
-for e in enabled_memory:
-   ans += find_ans(e)  
+test = "".join(enabled_memory)
+ans += find_ans(test)
 
 print(ans)

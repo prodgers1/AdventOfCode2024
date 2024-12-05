@@ -53,13 +53,14 @@ in_order = list()
 not_in_order = list()
 not_in_order_now_in_order = list()
 
+# part 1
 for update in updates:
   if page_in_order(update):
     in_order.append(update)
   else:
     not_in_order.append(update)
 
-
+# part 2
 for notGood in not_in_order:
   current = notGood[:]
   while True:
